@@ -136,6 +136,46 @@ body {
       display: block;
       margin: 0 auto;
     }
+    /* 5 */
+    .glimpse-section {
+      padding: 4rem 1rem;
+      background: radial-gradient(circle at center, #151515 0%, #0d0d0d 100%);
+    }
+    .glimpse-title {
+      font-weight: 800;
+      font-size: 2rem;
+      color: #fff;
+    }
+    .glimpse-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .glimpse-list li {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+      color: #fff;
+    }
+    .glimpse-list li::before {
+      content: '✔️';
+      position: absolute;
+      left: 0;
+      color: #00ff73;
+      font-size: 1.1rem;
+    }
+    .glimpse-highlight {
+      color: #fff;
+      font-weight: bold;
+    }
+    .glimpse-bold {
+      color: white;
+      font-weight: bold;
+    }
+    .right-image {
+      max-width: 100%;
+      height: auto;
+    }
 
     /* Ensure the menu stays centered on large screens */
     @media (min-width: 992px) {
