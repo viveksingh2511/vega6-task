@@ -1,188 +1,286 @@
 body {
     font-family: 'Calibri';
 }
+
 .navbar-custom {
-      background: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0.8) 0%,
-        rgba(26,21,35,0.8) 100%
-      );
-      backdrop-filter: blur(4px);
-    }
-    .nav-link:focus {
-        color: #fff !important;
-    }
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(26, 21, 35, 0.8) 100%);
+    backdrop-filter: blur(4px);
+}
 
-    /* Logo + title */
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      font-weight: 600;
-      font-size: 1.2rem;
-      color: #b388ff;
-    }
-    .navbar-brand img {
-      height: 45px;
-      margin-right: 8px;
-    }
+.nav-link:focus {
+    color: #fff !important;
+}
 
-    /* Nav links */
-    .nav-link {
-      color: #fff;
-      font-weight: 500;
-      margin: 0 0.75rem;
-    }
-    .nav-link:hover {
-      color: #b388ff;
-    }
+/* Logo + title */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #b388ff;
+}
 
-    /* Active link indicator */
-    .nav-link.active {
-      color: #ffffff;
-    }
-    /* 2 */
-     /* SECTION BACKGROUND & DOT GRID */
-    .workshop-section {
-      position: relative;
-      background-color: #1d182d;
-      color: #fff;
-      overflow: hidden;
-      padding: 5rem 1rem;
-    }
-    .workshop-section::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      /* two overlapping radial-dot patterns */
-      background-image:
+.navbar-brand img {
+    height: 45px;
+    margin-right: 8px;
+}
+
+/* Nav links */
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0.75rem;
+}
+
+.nav-link:hover {
+    color: #b388ff;
+}
+
+/* Active link indicator */
+.nav-link.active {
+    color: #ffffff;
+}
+
+/* 2 */
+/* SECTION BACKGROUND & DOT GRID */
+.workshop-section {
+    position: relative;
+    background-color: #1d182d;
+    color: #fff;
+    overflow: hidden;
+    padding: 5rem 1rem;
+}
+
+.workshop-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* two overlapping radial-dot patterns */
+    background-image:
         radial-gradient(#4b3069 1px, transparent 1px),
         radial-gradient(#4b3069 1px, transparent 1px);
-      background-size: 60px 60px;
-      background-position: 0 0, 30px 30px;
-      opacity: 0.15;
-      pointer-events: none;
-    }
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    opacity: 0.15;
+    pointer-events: none;
+}
 
-    /* GLOWING BUTTON */
-    .glow-btn {
-      background: #1a1523;
-      border: none;
-      border-radius: 50px;
-      padding: 0.5rem 2rem;
-      color: #fff;
-      text-transform: none;
-      font-weight: 500;
-      box-shadow:
+/* GLOWING BUTTON */
+.glow-btn {
+    background: #1a1523;
+    border: none;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    text-transform: none;
+    font-weight: 500;
+    box-shadow:
         0 0 10px #4b3069,
         0 0 15px #4b3069;
-      transition: box-shadow 0.3s ease;
-    }
-    .glow-btn:hover {
-      box-shadow:
+    transition: box-shadow 0.3s ease;
+}
+
+.glow-btn:hover {
+    box-shadow:
         0 0 20px #4b3069,
         0 0 60px #4b3069;
-    }
+}
 
-    /* HEADLINE STYLING */
-    .headline {
-      font-size: 2rem;
-      line-height: 1.2;
-      margin-top: 2rem;
-    }
-    .headline .live {
-      color: #6E38FD;
-      font-weight: 700;
-    }
-    .headline .underline {
-      text-decoration: underline;
-      text-decoration-color: #4b3069;
-    }
-    /* 3 */
-    .banner-wrapper {
-      background-color: #0d022b;
-      padding: 30px 0;
-      overflow: hidden;
-    }
+/* HEADLINE STYLING */
+.headline {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 2rem;
+}
 
-    .slanted-banner {
-      background-color: #361887;
-      transform: skewY(2.6deg);
-      padding: 25px 0;
-      text-align: center;
-    }
+.headline .live {
+    color: #6E38FD;
+    font-weight: 700;
+}
 
-    .slanted-banner p {
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: 500;
-      margin: 0;
-      transform: skewY(0deg); /* Counter skew to keep text straight */
-      padding: 0px 40px;
-    }
-    /* 4 */
-    .laptop-section {
-      position: relative;
-      background: linear-gradient(180deg, #1a1523 0%, #361887 80%, #000 100%);
-      padding: 4rem 0 2rem;
-      overflow: hidden;
-    }
-    .laptop-section .laptop-wrapper {
-      position: relative;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-    .laptop-section img.laptop {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-    }
-    /* 5 */
-    .glimpse-section {
-      padding: 4rem 1rem;
-      background: radial-gradient(circle at center, #151515 0%, #0d0d0d 100%);
-    }
-    .glimpse-title {
-      font-weight: 800;
-      font-size: 2rem;
-      color: #fff;
-    }
-    .glimpse-list {
-      list-style: none;
-      padding-left: 0;
-    }
-    .glimpse-list li {
-      position: relative;
-      padding-left: 2rem;
-      margin-bottom: 1.2rem;
-      line-height: 1.6;
-      color: #fff;
-    }
-    .glimpse-list li::before {
-      content: '✔️';
-      position: absolute;
-      left: 0;
-      color: #00ff73;
-      font-size: 1.1rem;
-    }
-    .glimpse-highlight {
-      color: #fff;
-      font-weight: bold;
-    }
-    .glimpse-bold {
-      color: white;
-      font-weight: bold;
-    }
-    .right-image {
-      max-width: 100%;
-      height: auto;
-    }
+.headline .underline {
+    text-decoration: underline;
+    text-decoration-color: #4b3069;
+}
 
-    /* Ensure the menu stays centered on large screens */
-    @media (min-width: 992px) {
-      .navbar-nav {
+/* 3 */
+.banner-wrapper {
+    background-color: #0d022b;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.slanted-banner {
+    background-color: #361887;
+    transform: skewY(2.6deg);
+    padding: 25px 0;
+    text-align: center;
+}
+
+.slanted-banner p {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    transform: skewY(0deg);
+    /* Counter skew to keep text straight */
+    padding: 0px 40px;
+}
+
+/* 4 */
+.laptop-section {
+    position: relative;
+    background: linear-gradient(180deg, #1a1523 0%, #361887 80%, #000 100%);
+    padding: 4rem 0 2rem;
+    overflow: hidden;
+}
+
+.laptop-section .laptop-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.laptop-section img.laptop {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 5 */
+.glimpse-section {
+    padding: 4rem 1rem;
+    background: radial-gradient(circle at center, #151515 0%, #0d0d0d 100%);
+}
+
+.glimpse-title {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.glimpse-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.glimpse-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    color: #fff;
+}
+
+.glimpse-list li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    color: #00ff73;
+    font-size: 1.1rem;
+}
+
+.glimpse-highlight {
+    color: #fff;
+    font-weight: bold;
+}
+
+.glimpse-bold {
+    color: white;
+    font-weight: bold;
+}
+
+.right-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 6 */
+.signup-section {
+    background: linear-gradient(#575656, black);
+    border-radius: 15px;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    max-width: 650px;
+    margin: 4rem auto;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    border: 2px solid rgb(120 114 114);
+}
+
+.signup-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.signup-text {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.form-control-custom {
+    background-color: #434569;
+    border: none;
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-control-custom::placeholder {
+    color: #aaa;
+}
+
+.signup-btn {
+    background: linear-gradient(to right, #7a34ff, #902bff);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 2rem;
+    width: 70%;
+    font-size: 14px;
+}
+
+.icon-input {
+    position: relative;
+}
+
+.icon-input i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+.icon-input input {
+    padding-left: 2.5rem;
+    width: 90%;
+}
+
+/* Ensure the menu stays centered on large screens */
+@media (min-width: 992px) {
+    .navbar-nav {
         margin: 0 auto;
-      }
     }
-    @media (min-width: 768px) {
-      .headline { font-size: 2.75rem; }
+}
+
+@media (min-width: 768px) {
+    .headline {
+        font-size: 2.75rem;
     }
+}
+
+@media (max-width: 767px) {
+    .signup-section {
+        text-align: center;
+    }
+
+    .icon-input input {
+        width: 100%;
+    }
+}
