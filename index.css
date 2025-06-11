@@ -1,11 +1,13 @@
 body {
     font-family: 'Calibri';
+    background-color: #000;
+    overflow-x: hidden;
 }
 
 .navbar-custom {
     background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.8) 0%,
-            rgba(26, 21, 35, 0.8) 100%);
+    #000000 0%,
+    #666666 180%);
     backdrop-filter: blur(4px);
 }
 
@@ -93,6 +95,7 @@ body {
     font-size: 2rem;
     line-height: 1.2;
     margin-top: 2rem;
+    color: #fff;
 }
 
 .headline .live {
@@ -100,7 +103,7 @@ body {
     font-weight: 700;
 }
 
-.headline .underline {
+.headline:hover {
     text-decoration: underline;
     text-decoration-color: #4b3069;
 }
@@ -109,24 +112,24 @@ body {
 .banner-wrapper {
     background-color: #0d022b;
     padding: 30px 0;
-    overflow: hidden;
 }
 
 .slanted-banner {
     background-color: #361887;
-    transform: skewY(2.6deg);
+    transform: skewY(2.2deg);
     padding: 25px 0;
     text-align: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
 }
 
 .slanted-banner p {
+    transform: skewY(-2.6deg); 
     color: #fff;
     font-size: 1.5rem;
     font-weight: 500;
     margin: 0;
-    transform: skewY(0deg);
-    /* Counter skew to keep text straight */
-    padding: 0px 40px;
+    padding: 0 40px;
 }
 
 /* 4 */
@@ -262,6 +265,65 @@ body {
     width: 90%;
 }
 
+/* 7 */
+.custom-card {
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #151313;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    width: 70%;
+    height: 430px;
+  }
+  .custom-card2 {
+    height: 270px !important;
+  }
+  .custom-card img {
+    width: 50%;
+    transform: rotate(-5deg);
+    border-radius: 10px;
+  }
+  .custom-card .cardbody {
+    padding: 1.5rem;
+  }
+  .custom-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .custom-card .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  .custom-card .btn-custom {
+    background: linear-gradient(90deg, #7a34ff, #902bff);
+    border: none;
+    border-radius: 30px;
+    padding: 0.75rem 2rem;
+    color: #fff;
+    font-weight: 600;
+  }
+  .custom-card .btn-custom:hover {
+    background: linear-gradient(90deg, #902bff, #7a34ff);
+  }
+  .highlight {
+    color: #6E38FD;
+  }
+  /* 8 */
+  .result {
+    background: url(images/Rectangle.png);
+    padding: 20mm;
+  }
+  /* 9 */
+  .card-sec {
+    background: url(images/card-bg.png);
+    padding: 20mm;
+  }
+  img.profile-img {
+    width: 15%;
+}
+
 /* Ensure the menu stays centered on large screens */
 @media (min-width: 992px) {
     .navbar-nav {
@@ -282,5 +344,35 @@ body {
 
     .icon-input input {
         width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .signup-section {
+        padding-left: 2rem;
+    }
+}
+@media (max-width:1200px) {
+    .custom-card {
+        width: 100%;
+    }
+}
+@media (min-width:1200px) {
+    .custom-card {
+        width: 70%;
+    }
+}
+@media (max-width: 992px) and (min-width: 767px) {
+    .custom-card i {
+        font-size: 12px;
+    }
+}
+@media (max-width:456px) {
+    .custom-card i {
+        font-size: 10px;
+    }
+}
+@media (max-width: 578px) and (min-width: 457px) {
+    .custom-card i {
+        font-size: 12px;
     }
 }
