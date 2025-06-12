@@ -6,8 +6,8 @@ body {
 
 .navbar-custom {
     background: linear-gradient(to bottom,
-    #000000 0%,
-    #666666 180%);
+            #000000 0%,
+            #666666 180%);
     backdrop-filter: blur(4px);
 }
 
@@ -124,7 +124,7 @@ body {
 }
 
 .slanted-banner p {
-    transform: skewY(-2.6deg); 
+    transform: skewY(-2.6deg);
     color: #fff;
     font-size: 1.5rem;
     font-weight: 500;
@@ -274,53 +274,64 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: #fff;
     width: 70%;
-    height: 430px;
-  }
-  .custom-card2 {
+    height: 440px;
+}
+
+.custom-card2 {
     height: 270px !important;
-  }
-  .custom-card img {
+}
+
+.custom-card img {
     width: 50%;
     transform: rotate(-5deg);
     border-radius: 10px;
-  }
-  .custom-card .cardbody {
+}
+
+.custom-card .cardbody {
     padding: 1.5rem;
-  }
-  .custom-card .card-title {
+}
+
+.custom-card .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-  }
-  .custom-card .card-text {
+}
+
+.custom-card .card-text {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
-  }
-  .custom-card .btn-custom {
+}
+
+.custom-card .btn-custom {
     background: linear-gradient(90deg, #7a34ff, #902bff);
     border: none;
     border-radius: 30px;
     padding: 0.75rem 2rem;
     color: #fff;
     font-weight: 600;
-  }
-  .custom-card .btn-custom:hover {
+}
+
+.custom-card .btn-custom:hover {
     background: linear-gradient(90deg, #902bff, #7a34ff);
-  }
-  .highlight {
+}
+
+.highlight {
     color: #6E38FD;
-  }
-  /* 8 */
-  .result {
+}
+
+/* 8 */
+.result {
     background: url(images/Rectangle.png);
     padding: 20mm;
-  }
-  /* 9 */
-  .card-sec {
+}
+
+/* 9 */
+.card-sec {
     background: url(images/card-bg.png);
-    padding: 20mm;
-  }
-  img.profile-img {
+    padding: 20mm 0mm;
+}
+
+img.profile-img {
     width: 15%;
 }
 
@@ -346,33 +357,45 @@ body {
         width: 100%;
     }
 }
+
 @media (max-width: 576px) {
     .signup-section {
         padding-left: 2rem;
     }
 }
+
 @media (max-width:1200px) {
     .custom-card {
         width: 100%;
     }
 }
+
 @media (min-width:1200px) {
     .custom-card {
         width: 70%;
     }
 }
+
 @media (max-width: 992px) and (min-width: 767px) {
     .custom-card i {
         font-size: 12px;
     }
 }
+
 @media (max-width:456px) {
     .custom-card i {
         font-size: 10px;
     }
 }
+
 @media (max-width: 578px) and (min-width: 457px) {
     .custom-card i {
         font-size: 12px;
+    }
+}
+
+@media (max-width:400px) {
+    .glimpse-title {
+        font-size: 1rem;
     }
 }
